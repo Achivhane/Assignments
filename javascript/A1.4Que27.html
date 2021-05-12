@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Question 27</title>
+</head>
+<body>
+<script>
+var a = [5,4,6];
+var b = [1, 2, 3];
+var newList = function(a,b)
+{
+  var l = a.length+b.length;
+  var r = [];
+  var j=0,k=0;
+  for(let i=0; i<l;i++) {
+    if(i%2==0) {
+      r[i]=a[j++];
+    } else {
+      r[i]=b[k++];
+    }
+  }
+  r.sort(function(a, b){return a-b})
+  return r;
+
+}
+
+console.log(newList(a,b));
+</script>
+</body>
+</html>

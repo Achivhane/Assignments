@@ -1,0 +1,19 @@
+<html>
+<head><title>A3Q3</title></head>
+<body>
+<script>
+var rectangle_class=function(height,width){
+    this.height=height,
+    this.width=width
+   
+};
+rectangle_class.prototype.getArea=function(){
+console.log("area is:" + (this.width*this.height));
+}
+console.log(rectangle_class.prototype);
+var rectangle1=new rectangle_class(4,5);
+console.log(rectangle1);
+rectangle1.getArea();
+</script>
+</body>
+</html>

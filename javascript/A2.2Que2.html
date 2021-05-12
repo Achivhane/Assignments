@@ -1,0 +1,28 @@
+<html>
+<head><title>A2Q2</title></head>
+<body>
+<script> 
+var x;
+function double(x){
+return x*2;
+}
+function square(x){
+return x*x;
+}
+function composedValue(square,double,x){
+return square(double(x));
+}
+var r1=composedValue(square,double,5);
+console.log(r1);
+var r2=composedValue(square,double,10);
+console.log(r2);
+
+var r=composedValue(square,double,5);
+console.log(r2);
+var r=composedValue(square,double,10);
+console.log(r2);
+
+
+</script>
+</body>
+</html>

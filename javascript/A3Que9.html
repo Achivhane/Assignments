@@ -1,0 +1,28 @@
+<html>
+<head><title>A3Q9</title></head>
+<body>
+<script> 
+function person(fname,lname,age,skill,dateofbirth,address,married,professional){
+this.fname=fname;
+this.lname=lname;
+this.age=age;
+this.skill=skill;
+this.dateofbirth=dateofbirth;
+this.address=address;
+this.married=married;
+this.professional=professional;
+}
+person1=new person("nikhil","goud",22,["c"],"24/10/1996",{city:"hydrabad",pincode:521185},"false","sr analyst");
+person2=new person("harish","chinna",21,"HTML","08/06/1997",{city:"Ameerpet",pincode:500038},"false","jr analyst");
+var person2=Object.create(person1);
+person3= new person("asmita",10);
+var person3=Object.create(person2);
+//print=function(){
+console.log(person1);
+console.log(person2);
+console.log(person3);
+
+//}
+</script>
+</body>
+</html>

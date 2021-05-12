@@ -1,0 +1,27 @@
+<html>
+<head><title>A3Q2</title></head>
+<body>
+<script>
+var rectangle_class=function(height,width,color){
+    this.height=height,
+    this.width=width,
+    this.color=color
+};
+
+rectangle_class.prototype.getArea=function(){
+
+console.log("area is:" + (this.width*this.height));
+}
+console.log(rectangle_class.prototype);
+var rectangle1=new rectangle_class(50,10,"red");
+console.log(rectangle1);
+var rectangle2=new rectangle_class(50,20,"blue");
+console.log(rectangle2);
+var rectangle3=new rectangle_class(50,30,"green");
+console.log(rectangle3);
+rectangle1.getArea();
+rectangle2.getArea();
+rectangle3.getArea();
+</script>
+</body>
+</html>

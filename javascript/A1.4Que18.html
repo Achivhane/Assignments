@@ -1,0 +1,20 @@
+<html>
+<head><title>Question 18</title></head>
+<body>
+<script>
+function map(square,a) {
+  var result = [];
+  for(var i=0;i<=a.length-1;i++)
+   result[i]=square(a[i]);
+  return result;
+}
+
+var square = function(x) {
+   return x*x;
+}
+
+var value=[1,2,3,4];
+var final= map(square,value);
+console.log(final);
+</script>
+</body></html>
