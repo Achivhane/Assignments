@@ -1,0 +1,28 @@
+<html>
+<body>
+<script>
+ interface printable{
+    name:string;
+    id?:number;
+    color?:string;
+    shape?:string;
+    salary?:number;
+}
+let circle:printable={
+    name:"circle1",
+    shape:"circular",
+    color:"red"
+};
+let employee1:printable={
+    name:"Asmita",
+    salary:22000,
+    id:121
+};
+function printAll(obj){
+    return Object.preventExtensions(obj);
+}
+console.log(printAll(circle));
+console.log(printAll(employee1));
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<html>
+<body>
+<script>
+let chatroom1 = new Map();
+let chatroom3 = new Set();
+let chatroom2 = new Set();
+chatroom1.set("user1","hello,User1 is here");
+chatroom2.add("user2","hello,User2 is here");
+chatroom3.add("user3","hello,User3 is here");
+
+console.log(chatroom1.get("user1"));
+console.log(chatroom2.has("user2"));
+console.log(chatroom2.has("user3"));
+
+let obj1={
+username:"employee1",
+message:"hii employee1"
+}
+let obj2={
+    username:"employee2",
+    message:"hii employee2"
+    }
+let obj3={
+        username:"employee3",
+        message:"hii employee3"
+        }
+ chatroom2.add(obj1);   
+ chatroom2.add(obj2); 
+ chatroom3.add(obj3);
+ 
+ for(let key of chatroom1.keys()){
+     console.log(key);
+ }
+for(let values of chatroom1.values()){
+    console.log(values);
+}
+for(let entries of chatroom2.entries()){
+    console.log(entries);
+
+}
+</script>
+</body>
+</html>

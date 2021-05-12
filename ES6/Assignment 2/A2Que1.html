@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+var fibbo=function*(){
+let currentno=1;
+let previousno=0;
+let sum;
+ for(i=1;i<=10;i++){
+ console.log(previousno);
+    sum = currentno + previousno;
+    previousno = currentno;
+    currentno = sum;
+}
+}
+var f= fibbo();
+console.log(f.next().value);
+</script>
+</body>
+</html>

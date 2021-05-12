@@ -1,0 +1,20 @@
+<html>
+<body>
+<script>
+function str(msg, ...problem){
+console.log(msg);
+for(i in problem){
+console.log(problem[i]);
+}
+}
+var msg="problem with laptop";
+problem =["ticket no.--1235","some keys are not working properly"];
+let laptop_model="PES123";
+let name="Asmita";
+let des="Hello sysnet, My laptop Model Number is "+laptop_model + " my name is "+name+"";
+console.log(des);
+str(msg,...problem);
+//console.log(des);
+</script>
+</body>
+</html>
